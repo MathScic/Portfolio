@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Premier pas dans le HTML",
+    "image": "images/Projet-1.png",
+    "url": "https://github.com/MathScic/P2---Projet-2-",
+    "technologies": ["HTML/CSS"],
+    "description": "Premier projet fait uniquement avec du HTML. Apprentissage  et utilisation des balises HTML afin de mettre en place un projet de prise de rendez-vous pour des cours de skate-board. "
+  },
+
+  {
+    "title": "Création page accueil agence de voyage",
+    "image": "images/Projet-2.png",
+    "url": "https://github.com/MathScic/P3--Booki-",
+    "technologies": ["HTML/CSS"],
+    "description": "Dans ce projet, nous avons appris à utiliser le HTML ainsi que le CSS pour ce qui est d'appliquer les couleurs ou d'arrondir les angles et l'utilisation de flex box pour placer nos balises correctement. "
+  },
+
+  {
+    "title": "Oh My Food",
+    "image": "images/Projet-3.png",
+    "url": "https://github.com/MathScic/P4_Scicluna_Mathieu_24_04_23",
+    "technologies": ["HTML/CSS"],
+    "description": "A l'issue de ce projet on a appris a gérer les animations en CSS ainsi que les liens pour naviguer de pages en pages"
+  },
+
+  {
+    "title": "Premier pas sur JS",
+    "image": "images/Projet-4.png",
+    "url": "https://github.com/MathScic/P-5-Print-JS-/tree/main/assets",
+    "technologies": ["JavaScript"],
+    "description": "Ceci était notre premier projet en JavaScript, on se devait de mettre en place le slide du site Prin It"
+  },
+
+  {
+    "title": "Kasa",
+    "image": "images/Projet-8.png",
+    "url": "https://github.com/MathScic/P8-Kasa",
+    "technologies": ["React, JSON, NodeJS"],
+    "description": "Le projet 8 avait pour but de nous apprendre à utiliser correctement React pour créer le site vitrine de l'agence de location Kasa"
+  },
+
+  {
+    "title": "724Event ",
+    "image": "images/Projet-10.png",
+    "url": "https://github.com/MathScic/P10-END",
+    "technologies": ["React"],
+    "description": "Ce projet avait pour but de nous apprendre à gérer les bugs sur un site déjà existant et à coder, et de nous apprendre à créer un cahier des recettes. "
+  },
+
+  {
+    "title": "Argent Bank ",
+    "image": "images/Projet-11.png",
+    "url": "https://github.com/MathScic/P11-Soutenance",
+    "technologies": ["React, NodeJS, MonggoDB"],
+    "description": "Argent Bank nous a permis d'apprendre à gérer une base de donnée avec MongoDb afin de pouvoir stocker et utiliser des données pour s'identifier lors de l'authentification d'un compte  "
+  },
+
+  {
+    "title": "Liste Marvel ",
+    "image": "images/marvel-banner.jpg",
+    "url": "https://github.com/MathScic/Liste-Marvel",
+    "technologies": ["React, NodeJS, API rest"],
+    "description": "Ce projet a permis de continuer a parfaire mon expérience sur React et l'utilisation de NodeJS ainsi que des API. "
+  }
+]

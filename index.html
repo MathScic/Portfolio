@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio de Mathieu Scicluna</title>
+    <script src="https://kit.fontawesome.com/76e9b7325c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./animation/animation.css">
+    <link rel="stylesheet" href="./Realisation/realisation.css">
+    <link rel="stylesheet" href="./Competence/competence.css">
+    <link rel="stylesheet" href="./Contact/contact.css">
+  </head>
+  <body>
+    <header class="fade-in"></header>
+
+    <nav id="menu">
+      <ul class=>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#presentation">Présentation</a></li>
+        <li><a href="#realisation">Réalisation</a></li>
+        <li><a href="#competences">Compétence</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="images/CV Intégrateur Web.pdf">CV</a></li>
+      </ul>
+    </nav>
+
+    <section id="accueil" class="fade-in">
+      <div class="container-animation">
+        <h1 class="name">Bonjour,<p class="name"></p></h1>
+        <p class="work"></p>
+      </div>
+    </section>
+
+    <section id="presentation" class="fade-in">
+      <div class="container">
+        <h2>Présentation</h2>
+        <p class="pres-size">
+          Développeur récemment diplômé et passionné du web. <br />Je conçois et
+          réalise des sites web, <br />J'ai appris et continue de parfaire la
+          connaissance de certains framework comme React principalement
+        </p>
+        <a href="#realisation"
+          >Voici certains projets réaliser pendant ma formation</a
+        >
+      </div>
+    </section>
+
+    <section id="realisation" class="fade-in">
+      <div class="container">
+        <h2>Réalisations</h2>
+      </div>
+      <div id="project-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img id="modal-image" src="" alt="" />
+          <h3 id="modal-title"></h3>
+          <p id="modal-description"></p>
+          <p id="modal-technologies"></p>
+        </div>
+      </div>
+
+      <div id="projects"></div>
+    </section>
+
+    <section id="competences" class="fade-in">
+      <h2>Compétences</h2>
+      <div class="slider">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="slide-container">
+          <div class="slide" id="html-slide">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML</h3>
+            <p>Nous avons appris à utilisé HTML pour structurer les contenus <br>web de manière sémantique et accessible. <br>Avec l'utilisation des balises </p>
+          </div>
+          <div class="slide" id="css-slide">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS</h3>
+            <p>Nous avons appris à stylisé des interfaces utilisateurs <br>modernes et réactives en utilisant CSS, <br>comme les animations, le responsiv ...</p>
+          </div>
+          <div class="slide" id="js-slide">
+            <i class="fa-brands fa-js"></i>
+            <h3>JavaScript</h3>
+            <p>On a appris à développé des fonctionnalités interactives et dynamiques <br> avec JavaScript, pour rendre nos interfaces plus dynamiques et agréables.</p>
+          </div>
+          <div class="slide" id="react-slide">
+            <i class="fa-brands fa-react"></i>
+            <h3>React</h3>
+            <p>On a appris à construire des applications web performantes et maintenables <br>avec  le framework React, gestion des composants, utilisation de redux, etc...</p>
+          </div>
+          <div class="slide" id="node-slide">
+            <i class="fa-brands fa-node"></i>
+            <h3>Node</h3>
+            <p>On m'a appris à gérer des serveurs robustes et scalables avec Node.js. <br>Ainsi que l'utilisation des lignes de commande et la mise en relation avec MongoDB </p>
+          </div>
+        </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2>Contactez-nous</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="first-name">Prénom:</label>
+          <input type="text" id="first-name" name="first-name" required />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Nom:</label>
+          <input type="text" id="last-name" name="last-name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <p>Votre message a été envoyé avec succès !</p>
+      </div>
+    </div>
+
+    <footer class="footer fade-in">
+      <div class="footer-link">
+        <a href="mailto:mthscicluna@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/mathieu-scicluna-8346482ba/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <p>&copy; 2024 Portfolio de Mathieu Scicluna</p>
+      <script src="./JS/script.js"></script>
+      <script
+        type="text/javascript"
+        src="https://cdn.emailjs.com/dist/email.min.js"
+      ></script>
+      <script type="text/javascript">
+        (function () {
+          emailjs.init("208rQ8DCIbG-ekfeO");
+        })();
+      </script>
+      <script src="./Competence/competence.js"></script>
+      <script src="./Contact/contactForm.js"></script>
+      
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            });
+
+            document.querySelectorAll('.fade-in').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+    </footer>
+  </body>
+</html>
