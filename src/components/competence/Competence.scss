@@ -1,0 +1,14 @@
+.projet-container {
+  background-color: #f0f0f0;
+  height: auto;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 70%;
+  margin: auto;
+}
