@@ -86,9 +86,9 @@ button:hover {
   color: #4caf50;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .form-container {
-    width: 90%;
+    width: 80%;
     margin: auto;
   }
 

@@ -5,7 +5,7 @@ import "./ButtonContact.scss";
 const ButtonContact = () => {
   return (
     <div className="contact-container">
-      <h1>Intérsser par une collaboration ?</h1>
+      <h1>Intéresser par une collaboration ?</h1>
       <h2>Nous pouvons discuter de vos projet juste ici 👇</h2>
       <Link to="/contact" className="button-container">
         <button className="button">Un projet ?</button>
